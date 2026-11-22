@@ -1,12 +1,23 @@
-body {
-    background-color: black;
+:root {
+  --cor-primaria: #003874;
+  --cor-superficie: #002A57;
+  --cor-destaque: #E3B103;
+  --cor-fundo: #00152E;
+  --cor-texto: #F4F5FA;
+  --cor-texto-suave: #B8C4D9;
+
 }
+body  { 
+    font-family: "Lato", sans-serif; 
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+     }
+h1, h2, h3 { 
+    font-family: "Playfair Display", serif;
+    color: var(--cor-texto); 
+    }
+.button{
+    font-family: "Playfair Display", serif;
+    color: var(--cor-texto); 
 
-h1{ 
-color: white;
-
-}
-h2{
-
-    color: white;
 }
