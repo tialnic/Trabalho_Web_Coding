@@ -104,7 +104,6 @@ a:focus-visible { outline: 3px solid var(--cor-destaque); outline-offset: 3px; }
 .filtros-galeria__opcao:hover { color: var(--cor-destaque); border-color: var(--cor-destaque); }
 
 .galeria__radio--todos:checked ~ .filtros-galeria .filtros-galeria__opcao--todos,
-.galeria__radio--cardapio:checked ~ .filtros-galeria .filtros-galeria__opcao--cardapio,
 .galeria__radio--forno:checked ~ .filtros-galeria .filtros-galeria__opcao--forno,
 .galeria__radio--estabelecimento:checked ~ .filtros-galeria .filtros-galeria__opcao--estabelecimento,
 .galeria__radio--ingredientes:checked ~ .filtros-galeria .filtros-galeria__opcao--ingredientes {
@@ -114,7 +113,6 @@ a:focus-visible { outline: 3px solid var(--cor-destaque); outline-offset: 3px; }
 }
 
 .galeria__radio--todos:focus-visible ~ .filtros-galeria .filtros-galeria__opcao--todos,
-.galeria__radio--cardapio:focus-visible ~ .filtros-galeria .filtros-galeria__opcao--cardapio,
 .galeria__radio--forno:focus-visible ~ .filtros-galeria .filtros-galeria__opcao--forno,
 .galeria__radio--estabelecimento:focus-visible ~ .filtros-galeria .filtros-galeria__opcao--estabelecimento,
 .galeria__radio--ingredientes:focus-visible ~ .filtros-galeria .filtros-galeria__opcao--ingredientes {
@@ -122,7 +120,6 @@ a:focus-visible { outline: 3px solid var(--cor-destaque); outline-offset: 3px; }
   outline-offset: 3px;
 }
 
-.galeria__radio--cardapio:checked ~ .galeria__grid .galeria__item:not(.galeria__item--cardapio),
 .galeria__radio--forno:checked ~ .galeria__grid .galeria__item:not(.galeria__item--forno),
 .galeria__radio--estabelecimento:checked ~ .galeria__grid .galeria__item:not(.galeria__item--estabelecimento),
 .galeria__radio--ingredientes:checked ~ .galeria__grid .galeria__item:not(.galeria__item--ingredientes) {

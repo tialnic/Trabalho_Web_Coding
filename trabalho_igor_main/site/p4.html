@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galeria de fotos da Estaleiro Pizzaria: pizzas, forno a lenha, ambiente e ingredientes.">
+    <meta name="description" content="Galeria de fotos da Estaleiro Pizzaria: forno a lenha, ambiente e ingredientes.">
     <title>Estaleiro Pizzaria | Galeria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,13 +57,13 @@
             <div class="hero__container">
                 <div class="hero__conteudo">
                     <h1 id="hero-titulo" class="hero__titulo">Galeria do Estaleiro</h1>
-                    <p class="hero__descricao">Nossas pizzas, o forno a lenha, o salão e os ingredientes, em fotos.</p>
+                    <p class="hero__descricao">O forno a lenha, o salão e os ingredientes, em fotos.</p>
                     <div class="hero__botoes">
                         <a href="p1.html" class="botao botao--destaque">Explorar Cardápio</a>
                         <a href="landing_page.html" class="botao botao--secundario">Voltar ao Início</a>
                     </div>
                     <div class="hero__estatisticas">
-                        <div class="hero__estatistica-item"><span class="hero__estatistica-numero">26</span><span class="hero__estatistica-legenda">Fotos na Galeria</span></div>
+                        <div class="hero__estatistica-item"><span class="hero__estatistica-numero">17</span><span class="hero__estatistica-legenda">Fotos na Galeria</span></div>
                         <div class="hero__estatistica-divisor"></div>
                         <div class="hero__estatistica-item"><span class="hero__estatistica-numero">450&deg;C</span><span class="hero__estatistica-legenda">Forno a Lenha</span></div>
                         <div class="hero__estatistica-divisor"></div>
@@ -92,28 +92,26 @@
                 </div>
 
                 <input type="radio" name="filtro" id="filtro-todos" class="galeria__radio galeria__radio--todos" checked>
-                <input type="radio" name="filtro" id="filtro-cardapio" class="galeria__radio galeria__radio--cardapio">
                 <input type="radio" name="filtro" id="filtro-forno" class="galeria__radio galeria__radio--forno">
                 <input type="radio" name="filtro" id="filtro-estabelecimento" class="galeria__radio galeria__radio--estabelecimento">
                 <input type="radio" name="filtro" id="filtro-ingredientes" class="galeria__radio galeria__radio--ingredientes">
 
                 <div class="filtros-galeria">
                     <label for="filtro-todos" class="filtros-galeria__opcao filtros-galeria__opcao--todos">Todos</label>
-                    <label for="filtro-cardapio" class="filtros-galeria__opcao filtros-galeria__opcao--cardapio">Cardápio</label>
                     <label for="filtro-forno" class="filtros-galeria__opcao filtros-galeria__opcao--forno">Forno a Lenha</label>
                     <label for="filtro-estabelecimento" class="filtros-galeria__opcao filtros-galeria__opcao--estabelecimento">Estabelecimento</label>
                     <label for="filtro-ingredientes" class="filtros-galeria__opcao filtros-galeria__opcao--ingredientes">Ingredientes</label>
                 </div>
 
                 <div class="galeria__grid">
-                    <figure class="galeria__item galeria__item--cardapio galeria__item--destaque">
+                    <figure class="galeria__item galeria__item--ingredientes galeria__item--destaque">
                         <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/galeria-pizza-margherita.jpg" alt="Pizza Margherita com manjericão fresco" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
+                            <img class="galeria__imagem" src="imagens/ingredientes-pizza.jpg" alt="Ingredientes frescos para o preparo da pizza" loading="lazy">
+                            <span class="galeria__categoria">Ingredientes</span>
                         </div>
                         <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Pizza Margherita Clássica</h3>
-                            <p class="galeria__descricao-item">Molho San Marzano, muçarela de búfala e manjericão fresco.</p>
+                            <h3 class="galeria__titulo-item">Ingredientes Selecionados</h3>
+                            <p class="galeria__descricao-item">Produtos frescos de produtores locais.</p>
                         </figcaption>
                     </figure>
                     <figure class="galeria__item galeria__item--forno">
@@ -146,16 +144,6 @@
                             <p class="galeria__descricao-item">Cada disco começa com farinha, água, sal e tempo.</p>
                         </figcaption>
                     </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/galeria-pizza-pepperoni.jpg" alt="Pizza de pepperoni com borda crocante" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Pepperoni Especial</h3>
-                            <p class="galeria__descricao-item">Queijo derretido e borda tostada no forno a lenha.</p>
-                        </figcaption>
-                    </figure>
                     <figure class="galeria__item galeria__item--forno">
                         <div class="galeria__imagem-wrapper">
                             <img class="galeria__imagem" src="imagens/queijo-borbulhando.jpg" alt="Pizza com queijo e molho de tomate dentro do forno a lenha" loading="lazy">
@@ -164,26 +152,6 @@
                         <figcaption class="galeria__conteudo">
                             <h3 class="galeria__titulo-item">Queijo Borbulhando</h3>
                             <p class="galeria__descricao-item">O ponto certo chega em poucos segundos.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/napolitana-da-casa.jpg" alt="Pizza redonda recém-assada" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Napolitana da Casa</h3>
-                            <p class="galeria__descricao-item">Massa fina no centro e borda alta.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="galeria__item galeria__item--ingredientes">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/ingredientes-pizza.jpg" alt="Ingredientes frescos para o preparo da pizza" loading="lazy">
-                            <span class="galeria__categoria">Ingredientes</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Ingredientes Selecionados</h3>
-                            <p class="galeria__descricao-item">Produtos frescos de produtores locais.</p>
                         </figcaption>
                     </figure>
                     <figure class="galeria__item galeria__item--estabelecimento">
@@ -196,16 +164,6 @@
                             <p class="galeria__descricao-item">Na Av. Boa Viagem, de portas abertas para você.</p>
                         </figcaption>
                     </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/pepperoni-com-presunto.jpg" alt="Pizza fatiada de pepperoni e presunto em mesa escura" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Pepperoni com Presunto</h3>
-                            <p class="galeria__descricao-item">Fatias generosas sobre molho de tomate.</p>
-                        </figcaption>
-                    </figure>
                     <figure class="galeria__item galeria__item--forno">
                         <div class="galeria__imagem-wrapper">
                             <img class="galeria__imagem" src="imagens/direto-do-forno.jpg" alt="Mão segurando uma pizza quente recém-saída do forno" loading="lazy">
@@ -214,26 +172,6 @@
                         <figcaption class="galeria__conteudo">
                             <h3 class="galeria__titulo-item">Direto do Forno</h3>
                             <p class="galeria__descricao-item">Ainda soltando vapor a caminho da mesa.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="galeria__item galeria__item--ingredientes">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/sova-manual.jpg" alt="Mãos sovando massa ao lado de uma tigela branca" loading="lazy">
-                            <span class="galeria__categoria">Ingredientes</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Sova Manual</h3>
-                            <p class="galeria__descricao-item">A massa é trabalhada à mão, sem pressa.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/linguica-com-cogumelos.jpg" alt="Pizza de linguiça, cogumelos e azeitonas" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Linguiça com Cogumelos</h3>
-                            <p class="galeria__descricao-item">Cogumelos, azeitonas e linguiça em uma só pizza.</p>
                         </figcaption>
                     </figure>
                     <figure class="galeria__item galeria__item--estabelecimento">
@@ -254,16 +192,6 @@
                         <figcaption class="galeria__conteudo">
                             <h3 class="galeria__titulo-item">Forno a 450&deg;C</h3>
                             <p class="galeria__descricao-item">Calor intenso para uma borda crocante e macia por dentro.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/queijo-no-ponto.jpg" alt="Fatia de pizza com queijo derretido sendo levantada" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Queijo no Ponto</h3>
-                            <p class="galeria__descricao-item">A primeira fatia sempre puxa um fio.</p>
                         </figcaption>
                     </figure>
                     <figure class="galeria__item galeria__item--ingredientes">
@@ -296,16 +224,6 @@
                             <p class="galeria__descricao-item">O preparo acontece ao lado do forno.</p>
                         </figcaption>
                     </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/para-dividir.jpg" alt="Duas pizzas, uma delas com tomate e manjericão" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Para Dividir</h3>
-                            <p class="galeria__descricao-item">Duas pizzas, uma mesa e boa conversa.</p>
-                        </figcaption>
-                    </figure>
                     <figure class="galeria__item galeria__item--ingredientes">
                         <div class="galeria__imagem-wrapper">
                             <img class="galeria__imagem" src="imagens/tomate-e-salsa.jpg" alt="Tomates e purê de tomate com salsa em tigelas" loading="lazy">
@@ -324,16 +242,6 @@
                         <figcaption class="galeria__conteudo">
                             <h3 class="galeria__titulo-item">Jantar em Família</h3>
                             <p class="galeria__descricao-item">Espaço para grupos pequenos e grandes.</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="galeria__item galeria__item--cardapio">
-                        <div class="galeria__imagem-wrapper">
-                            <img class="galeria__imagem" src="imagens/fatia-na-mao.jpg" alt="Mão segurando uma fatia de pizza de pepperoni com muçarela" loading="lazy">
-                            <span class="galeria__categoria">Cardápio</span>
-                        </div>
-                        <figcaption class="galeria__conteudo">
-                            <h3 class="galeria__titulo-item">Fatia na Mão</h3>
-                            <p class="galeria__descricao-item">Pepperoni com muçarela fresca.</p>
                         </figcaption>
                     </figure>
                     <figure class="galeria__item galeria__item--forno">
