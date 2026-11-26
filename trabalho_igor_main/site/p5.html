@@ -1,12 +1,376 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Faça seu pedido online ou entre em contato com a Estaleiro Pizzaria Forno a Lenha.">
+    <title>Pizzaria Forno a Lenha | Pedidos e Contato</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="p5.css">
 </head>
-<body>
-     <H1>Pagina 5</H1>
+<body class="pagina">
+
+    <header class="header">
+        <div class="header__principal">
+            <div class="header__principal-container">
+                
+                <a href="landing_page.html" class="header__logo">
+                    <div class="header__logo-textos">
+                        <span class="header__logo-titulo">ESTALEIRO PIZZARIA</span>
+                        <span class="header__logo-subtitulo">FORNO A LENHA &bull; DESDE 2014</span>
+                    </div>
+                </a>
+
+                <input type="checkbox" id="nav-toggle" class="nav__checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav__hamburger" aria-label="Abrir menu">
+                    <span class="nav__hamburger-linha"></span>
+                    <span class="nav__hamburger-linha"></span>
+                    <span class="nav__hamburger-linha"></span>
+                </label>
+
+                <nav class="nav" aria-label="Navegação principal">
+                    <ul class="nav__lista">
+                        <li class="nav__item"><a href="landing_page.html" class="nav__link">Início</a></li>
+                        <li class="nav__item"><a href="p1.html" class="nav__link">Cardápio</a></li>
+                        <li class="nav__item"><a href="p2.html" class="nav__link">Sobre Nós</a></li>
+                        <li class="nav__item"><a href="p4.html" class="nav__link">Galeria</a></li>
+                        <li class="nav__item"><a href="p5.html" class="nav__link nav__link--ativo" aria-current="page">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="contato-hero" aria-labelledby="contato-titulo">
+            <div class="contato-hero__container">
+                
+                <div class="contato-hero__conteudo">
+                    <h1 id="contato-titulo" class="contato-hero__titulo">
+                        Peça Sua Pizza ou Fale Conosco
+                    </h1>
+                    <p class="contato-hero__descricao">
+                        Escolha até dois sabores artesanais do nosso cardápio, preencha seus dados para entrega ou retirada e receba sua pizza quentinha direto do forno a lenha.
+                    </p>
+
+                    <div class="contato-hero__botoes">
+                        <a href="#fazer-pedido" class="botao botao--destaque">Montar Pedido</a>
+                        <a href="p1.html" class="botao botao--secundario">Ver Cardápio</a>
+                    </div>
+
+                    <div class="contato-hero__estatisticas">
+                        <div class="contato-hero__estatistica-item">
+                            <span class="contato-hero__estatistica-numero">40 min</span>
+                            <span class="contato-hero__estatistica-legenda">Entrega Média</span>
+                        </div>
+                        <div class="contato-hero__estatistica-divisor"></div>
+                        <div class="contato-hero__estatistica-item">
+                            <span class="contato-hero__estatistica-numero">18h-23h</span>
+                            <span class="contato-hero__estatistica-legenda">Terça a Domingo</span>
+                        </div>
+                        <div class="contato-hero__estatistica-divisor"></div>
+                        <div class="contato-hero__estatistica-item">
+                            <span class="contato-hero__estatistica-numero">100%</span>
+                            <span class="contato-hero__estatistica-legenda">Assada na Hora</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contato-hero__midia">
+                    <div class="contato-hero__imagem-moldura">
+                        <img class="contato-hero__imagem" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="Pizza artesanal recém-saída do forno pronta para entrega" />
+                        <div class="contato-hero__tag-flutuante">
+                            <div>
+                                <strong class="contato-hero__tag-titulo">Delivery &amp; Retirada</strong>
+                                <span class="contato-hero__tag-texto">Embalagem térmica exclusiva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="fazer-pedido" class="pedido" aria-labelledby="pedido-titulo">
+            <div class="pedido__container">
+                <h2 id="pedido-titulo" class="secao-titulo secao-titulo--centralizado">Monte Seu Pedido</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">
+                    Selecione o tamanho, até dois sabores do cardápio e informe os dados para entrega ou contato
+                </p>
+
+                <div class="pedido__form">
+                    <div class="pedido__grid">
+
+                        <div class="pedido__coluna">
+                            <h3 class="pedido__subtitulo">1. Seus Dados e Endereço</h3>
+
+                            <div class="pedido__campo">
+                                <label for="pedido-nome" class="pedido__label">Nome Completo</label>
+                                <input type="text" id="pedido-nome" class="pedido__input" pattern=".*\S.*" required>
+                            </div>
+
+                            <div class="pedido__campo">
+                                <label for="pedido-telefone" class="pedido__label">Telefone / WhatsApp</label>
+                                <input type="tel" id="pedido-telefone" class="pedido__input" pattern=".*\S.*" required>
+                            </div>
+
+                            <div class="pedido__campo">
+                                <label for="pedido-endereco" class="pedido__label">Endereço Completo e Bairro</label>
+                                <input type="text" id="pedido-endereco" class="pedido__input" pattern=".*\S.*" required>
+                            </div>
+
+                            <div class="pedido__campo">
+                                <label for="pedido-observacoes" class="pedido__label">Observações ou Mensagem (opcional)</label>
+                                <input type="text" id="pedido-observacoes" class="pedido__input">
+                            </div>
+                        </div>
+
+                        <div class="pedido__coluna">
+                            <h3 class="pedido__subtitulo">2. Tamanho, Sabores e Pagamento</h3>
+
+                            <div class="pedido__grupo-opcoes">
+                                <span class="pedido__label">Tamanho da Pizza (escolha 1)</span>
+                                <ul class="pedido__lista-opcoes">
+                                    <li class="pedido__item-opcao">
+                                        <input type="radio" name="tamanho" id="tamanho-grande" class="pedido__radio" required>
+                                        <label for="tamanho-grande" class="pedido__opcao-label">
+                                            <strong class="pedido__opcao-titulo">Grande (8 fatias)</strong>
+                                        </label>
+                                    </li>
+                                    <li class="pedido__item-opcao">
+                                        <input type="radio" name="tamanho" id="tamanho-media" class="pedido__radio">
+                                        <label for="tamanho-media" class="pedido__opcao-label">
+                                            <strong class="pedido__opcao-titulo">Média (6 fatias)</strong>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pedido__grupo-opcoes pedido__grupo-opcoes--sabores">
+                                <span class="pedido__label">Sabores do Cardápio (escolha até 2)</span>
+                                <div class="pedido__lista-opcoes pedido__lista-opcoes--sabores">
+                                    <input type="checkbox" id="sabor-margherita" class="pedido__checkbox">
+                                    <label for="sabor-margherita" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Pizza Margherita Clássica</strong>
+                                            <span class="pedido__opcao-desc">Molho San Marzano, muçarela de búfala e manjericão fresco.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-pepperoni-especial" class="pedido__checkbox">
+                                    <label for="sabor-pepperoni-especial" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Pepperoni Especial</strong>
+                                            <span class="pedido__opcao-desc">Queijo derretido e borda tostada no forno a lenha.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-napolitana" class="pedido__checkbox">
+                                    <label for="sabor-napolitana" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Napolitana da Casa</strong>
+                                            <span class="pedido__opcao-desc">Massa fina no centro e borda alta.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-pepperoni-presunto" class="pedido__checkbox">
+                                    <label for="sabor-pepperoni-presunto" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Pepperoni com Presunto</strong>
+                                            <span class="pedido__opcao-desc">Fatias generosas sobre molho de tomate.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-linguica-cogumelos" class="pedido__checkbox">
+                                    <label for="sabor-linguica-cogumelos" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Linguiça com Cogumelos</strong>
+                                            <span class="pedido__opcao-desc">Cogumelos, azeitonas e linguiça em uma só pizza.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-queijo-ponto" class="pedido__checkbox">
+                                    <label for="sabor-queijo-ponto" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Queijo no Ponto</strong>
+                                            <span class="pedido__opcao-desc">A primeira fatia sempre puxa um fio.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-para-dividir" class="pedido__checkbox">
+                                    <label for="sabor-para-dividir" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Para Dividir</strong>
+                                            <span class="pedido__opcao-desc">Duas pizzas, uma mesa e boa conversa.</span>
+                                        </span>
+                                    </label>
+
+                                    <input type="checkbox" id="sabor-fatia-mao" class="pedido__checkbox">
+                                    <label for="sabor-fatia-mao" class="pedido__item-opcao">
+                                        <span class="pedido__opcao-texto">
+                                            <strong class="pedido__opcao-titulo">Fatia na Mão</strong>
+                                            <span class="pedido__opcao-desc">Pepperoni com muçarela fresca.</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pedido__grupo-opcoes">
+                                <span class="pedido__label">Modalidade (escolha 1)</span>
+                                <ul class="pedido__lista-opcoes">
+                                    <li class="pedido__item-opcao">
+                                        <input type="radio" name="modalidade" id="modalidade-entrega" class="pedido__radio" required>
+                                        <label for="modalidade-entrega" class="pedido__opcao-label">
+                                            <strong class="pedido__opcao-titulo">Entrega Delivery</strong>
+                                        </label>
+                                    </li>
+                                    <li class="pedido__item-opcao">
+                                        <input type="radio" name="modalidade" id="modalidade-retirada" class="pedido__radio">
+                                        <label for="modalidade-retirada" class="pedido__opcao-label">
+                                            <strong class="pedido__opcao-titulo">Retirada no Balcão</strong>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pedido__grupo-opcoes">
+                                <span class="pedido__label">Forma de Pagamento (escolha 1)</span>
+                                <ul class="pedido__lista-opcoes">
+                                    <li class="pedido__item-opcao">
+                                        <input type="radio" name="pagamento" id="pagamento-pix" class="pedido__radio" required>
+                                        <label for="pagamento-pix" class="pedido__opcao-label">
+                                            <strong class="pedido__opcao-titulo">Pagamento via PIX</strong>
+                                        </label>
+                                    </li>
+                                    <li class="pedido__item-opcao">
+                                        <input type="radio" name="pagamento" id="pagamento-cartao" class="pedido__radio">
+                                        <label for="pagamento-cartao" class="pedido__opcao-label">
+                                            <strong class="pedido__opcao-titulo">Cartão na Entrega</strong>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pedido__acoes">
+                        <a href="#pedido-enviado" class="botao botao--destaque">Enviar Pedido</a>
+                        <a href="p5.html" class="botao botao--secundario">Limpar Campos</a>
+                    </div>
+
+                    <div id="pedido-enviado" class="pedido__feedback" role="status">
+                        <div class="pedido__erro">
+                            <span class="pedido__erro-icone" aria-hidden="true">!</span>
+                            <p class="pedido__erro-texto">
+                                Você precisa preencher todas as informações e fazer todas as marcações (tamanho, sabor, modalidade e pagamento) antes de enviar o pedido.
+                            </p>
+                        </div>
+
+                        <div class="pedido__confirmacao">
+                            <span class="pedido__confirmacao-icone" aria-hidden="true">&#10003;</span>
+                            <p class="pedido__confirmacao-texto">
+                                Pedido enviado, avisaremos quando estiver pronto para a retirada ou estiver saindo para entrega.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="canais-atendimento" class="canais" aria-labelledby="canais-titulo">
+            <div class="canais__container">
+                <h2 id="canais-titulo" class="secao-titulo secao-titulo--centralizado">Canais de Atendimento e Localização</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">
+                    Prefere pedir por telefone ou retirar pessoalmente? Confira nossos dados
+                </p>
+
+                <div class="canais__lista">
+                    <article class="diferencial-card">
+                        <h3 class="diferencial-card__titulo">WhatsApp Direto</h3>
+                        <p class="diferencial-card__descricao">
+                            <strong>(81) 98765-4321</strong> &bull; Pedidos rápidos, dúvidas e acompanhamento de entrega.
+                        </p>
+                    </article>
+
+                    <article class="diferencial-card">
+                        <h3 class="diferencial-card__titulo">Telefone Fixo</h3>
+                        <p class="diferencial-card__descricao">
+                            <strong>(81) 3456-7890</strong> &bull; Central de pedidos e encomendas para eventos.
+                        </p>
+                    </article>
+
+                    <article class="diferencial-card">
+                        <h3 class="diferencial-card__titulo">Nosso Endereço</h3>
+                        <p class="diferencial-card__descricao">
+                            <strong>Av. Boa Viagem, 1500</strong> &bull; Recife, PE. Retirada no balcão sem taxa.
+                        </p>
+                    </article>
+
+                    <article class="diferencial-card">
+                        <h3 class="diferencial-card__titulo">Funcionamento</h3>
+                        <p class="diferencial-card__descricao">
+                            <strong>Terça a Domingo, 18h às 23h</strong> &bull; Forno a lenha aceso todos os dias, exceto segunda.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__coluna">
+                    <div class="footer__marca">
+                        <span class="footer__marca-nome">ESTALEIRO PIZZARIA</span>
+                    </div>
+                    <p class="footer__descricao">
+                        A tradicional pizza napolitana feita no forno a lenha com ingredientes autênticos e fermentação natural.
+                    </p>
+                </div>
+
+                <div class="footer__coluna">
+                    <h3 class="footer__titulo">Navegação</h3>
+                    <ul class="footer__links">
+                        <li class="footer__item"><a href="landing_page.html" class="footer__link">Início</a></li>
+                        <li class="footer__item"><a href="p1.html" class="footer__link">Cardápio Completo</a></li>
+                        <li class="footer__item"><a href="p2.html" class="footer__link">Nossa História &amp; Forno</a></li>
+                        <li class="footer__item"><a href="p4.html" class="footer__link">Galeria de Fotos</a></li>
+                        <li class="footer__item"><a href="p5.html" class="footer__link">Pedidos &amp; Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__coluna">
+                    <h3 class="footer__titulo">Atendimento</h3>
+                    <ul class="footer__contatos">
+                        <li class="footer__contato-item"><span>Av. Boa Viagem, 1500 - Recife, PE</span></li>
+                        <li class="footer__contato-item"><span>(81) 3456-7890</span></li>
+                        <li class="footer__contato-item"><span>WhatsApp: (81) 98765-4321</span></li>
+                        <li class="footer__contato-item"><span>contato@estaleiropizzaria.com.br</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__inferior">
+                <p class="footer__copyright">
+                    &copy; 2026 Estaleiro Pizzaria &bull; Todos os direitos reservados. Projeto Acadêmico de Web Coding.
+                </p>
+                <div class="footer__termos">
+                    <a href="p5.html" class="footer__termos-link">Política de Privacidade</a>
+                    <span class="footer__divisor">&bull;</span>
+                    <a href="p5.html" class="footer__termos-link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
