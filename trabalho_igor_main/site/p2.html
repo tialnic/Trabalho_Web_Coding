@@ -1,12 +1,272 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="p2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre nós - Estaleiro Restaurante</title>
+  <meta name="description" content="Conheça a história do Grupo Estaleiro: mais de 12 anos de frutos do mar à beira-mar em João Pessoa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="p2.css" />
 </head>
-<body>
-     <H1>Pagina 2</H1>
+<body class="pagina">
+
+  <header class="header">
+    <div class="header__principal">
+      <div class="header__principal-container">
+        <a class="header__logo" href="landing_page.html">
+          <span class="header__logo-textos">
+            <span class="header__logo-titulo">ESTALEIRO PIZZARIA</span>
+            <span class="header__logo-subtitulo">FORNO A LENHA • DESDE 2014</span>
+          </span>
+        </a>
+
+        <input class="nav__checkbox" type="checkbox" id="nav-toggle" />
+        <label class="nav__hamburger" for="nav-toggle" aria-label="Abrir menu">
+          <span class="nav__hamburger-linha"></span>
+          <span class="nav__hamburger-linha"></span>
+          <span class="nav__hamburger-linha"></span>
+        </label>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__lista">
+            <li><a class="nav__link" href="landing_page.html">Início</a></li>
+            <li><a class="nav__link" href="p1.html">Cardápio</a></li>
+            <li><a class="nav__link nav__link--ativo" href="p2.html" aria-current="page">Sobre nós</a></li>
+            <li><a class="nav__link" href="p4.html">Galeria</a></li>
+            <li><a class="nav__link" href="p3.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="hero__container">
+        <div class="hero__conteudo">
+          <h1 class="hero__titulo" id="titulo-hero">Do mar para o prato, há mais de 12 anos</h1>
+          <p class="hero__descricao">
+            Somos o Grupo Estaleiro: um cantinho onde o mar, o sabor e a tranquilidade se encontram em João Pessoa.
+          </p>
+          <div class="hero__botoes">
+            <a class="botao botao--destaque" href="p3.html">Reservar mesa</a>
+            <a class="botao botao--secundario" href="p1.html">Ver cardápio</a>
+          </div>
+          <div class="hero__estatisticas">
+            <div class="hero__estatistica-item">
+              <span class="hero__estatistica-numero">12+</span>
+              <span class="hero__estatistica-legenda">anos de tradição</span>
+            </div>
+            <span class="hero__estatistica-divisor"></span>
+            <div class="hero__estatistica-item">
+              <span class="hero__estatistica-numero">2</span>
+              <span class="hero__estatistica-legenda">casas em João Pessoa</span>
+            </div>
+            <span class="hero__estatistica-divisor"></span>
+            <div class="hero__estatistica-item">
+              <span class="hero__estatistica-numero">Nº 1</span>
+              <span class="hero__estatistica-legenda">no TripAdvisor da PB</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__midia">
+          <div class="hero__imagem-moldura">
+            <img class="hero__imagem" src="hero-sobre.jpg" width="800" height="600"
+                 alt="Mesa de frutos do mar do Estaleiro Restaurante" />
+            <div class="hero__tag-flutuante">
+              <div>
+                <strong class="hero__tag-titulo">Praia do Seixas</strong>
+                <span class="hero__tag-texto">Ponto mais oriental das Américas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" aria-labelledby="titulo-historia">
+      <div class="sobre__container">
+        <div class="sobre__grid">
+          <div class="sobre__area-texto">
+            <span class="sobre__selo">Nossa história</span>
+            <h2 class="secao-titulo" id="titulo-historia">Movidos pela paixão de servir bem</h2>
+            <p class="sobre__paragrafo">
+              Nascemos na Praia do Seixas e, desde então, servimos pratos preparados com ingredientes frescos e
+              selecionados. Somos referência em frutos do mar na Paraíba e o restaurante mais bem avaliado no TripAdvisor.
+            </p>
+            <p class="sobre__paragrafo">
+              Hoje, uma segunda casa no Bessa, perto da praia e com área climatizada, leva a mesma tradição para
+              o centro da cidade.
+            </p>
+            <div class="sobre__acoes">
+              <a class="botao botao--destaque" href="p3.html">Fale com a gente</a>
+            </div>
+          </div>
+
+          <div class="sobre__area-foto-principal">
+            <div class="sobre__moldura">
+              <img class="sobre__imagem" src="ambiente-seixas.jpg" width="800" height="600" loading="lazy"
+                   alt="Ambiente verde e aberto do Estaleiro Seixas" />
+            </div>
+          </div>
+
+          <div class="sobre__area-estatisticas">
+            <div class="sobre__bloco-destaque">
+              <h3 class="sobre__bloco-titulo">O que você encontra</h3>
+              <ul class="sobre__lista-pontos">
+                <li>Frutos do mar frescos, todos os dias</li>
+                <li>Ambiente acolhedor cercado de verde</li>
+                <li>Espaço para crianças</li>
+                <li>Área climatizada no Bessa</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sobre__area-foto-secundaria">
+            <div class="sobre__moldura sobre__moldura--compacta">
+              <img class="sobre__imagem" src="ambiente-bessa.jpg" width="800" height="400" loading="lazy"
+                   alt="Salão climatizado do Estaleiro Bessa" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="diferenciais" aria-labelledby="titulo-diferenciais">
+      <div class="diferenciais__container">
+        <h2 class="secao-titulo secao-titulo--centralizado" id="titulo-diferenciais">O que nos define</h2>
+        <p class="secao-subtitulo secao-subtitulo--centralizado">
+          Seis motivos que fazem do Estaleiro uma referência à beira-mar.
+        </p>
+        <ul class="diferenciais__lista">
+          <li class="diferencial-card">
+            <h3 class="diferencial-card__titulo">Referência em frutos do mar</h3>
+            <p class="diferencial-card__descricao">O mais bem avaliado da Paraíba no TripAdvisor.</p>
+          </li>
+          <li class="diferencial-card">
+            <h3 class="diferencial-card__titulo">Ingredientes frescos</h3>
+            <p class="diferencial-card__descricao">Peixes, camarões e lagostas selecionados todos os dias.</p>
+          </li>
+          <li class="diferencial-card">
+            <h3 class="diferencial-card__titulo">Ambiente acolhedor</h3>
+            <p class="diferencial-card__descricao">Cercado de verde, com clima de praia e ar de refúgio.</p>
+          </li>
+          <li class="diferencial-card">
+            <h3 class="diferencial-card__titulo">Mais de 12 anos</h3>
+            <p class="diferencial-card__descricao">Tradição construída prato a prato à beira-mar.</p>
+          </li>
+          <li class="diferencial-card">
+            <h3 class="diferencial-card__titulo">Espaço para crianças</h3>
+            <p class="diferencial-card__descricao">Parquinho e cardápio infantil para a família toda.</p>
+          </li>
+          <li class="diferencial-card">
+            <h3 class="diferencial-card__titulo">Área climatizada</h3>
+            <p class="diferencial-card__descricao">Conforto no Bessa, perto da praia e do centro.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="unidades" aria-labelledby="titulo-unidades">
+      <div class="unidades__container">
+        <h2 class="secao-titulo secao-titulo--centralizado" id="titulo-unidades">Duas casas para você conhecer</h2>
+        <p class="secao-subtitulo secao-subtitulo--centralizado">
+          Confirme os horários de atendimento pelo WhatsApp antes de visitar.
+        </p>
+        <div class="unidades__grid">
+          <article class="card card--destaque unidades__card-seixas">
+            <div class="card__imagem-wrapper">
+              <img class="card__imagem" src="unidade-seixas.jpg" width="640" height="400" loading="lazy"
+                   alt="Fachada do Estaleiro Seixas" />
+              <span class="card__badge">Original</span>
+            </div>
+            <div class="card__conteudo">
+              <h3 class="card__titulo">Estaleiro Seixas</h3>
+              <p class="card__descricao">R. dos Camarões, 95 - Ponta do Seixas, João Pessoa - PB</p>
+              <div class="card__rodape">
+                <span class="card__preco">(83) 3251-1142</span>
+                <a class="card__botao" href="tel:+558332511142">Ligar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card unidades__card-bessa">
+            <div class="card__imagem-wrapper">
+              <img class="card__imagem" src="unidade-bessa.jpg" width="640" height="400" loading="lazy"
+                   alt="Salão climatizado do Estaleiro Bessa" />
+            </div>
+            <div class="card__conteudo">
+              <h3 class="card__titulo">Estaleiro Bessa</h3>
+              <p class="card__descricao">R. Severino Linhares Pordeus, 59 - Jardim Oceania, João Pessoa - PB</p>
+              <div class="card__rodape">
+                <span class="card__preco">(83) 2177-7459</span>
+                <a class="card__botao" href="tel:+558321777459">Ligar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-cta" aria-labelledby="titulo-cta">
+      <div class="banner-cta__container">
+        <div class="banner-cta__conteudo">
+          <span class="banner-cta__selo">Venha nos visitar</span>
+          <h2 class="banner-cta__titulo" id="titulo-cta">Venha almoçar conosco</h2>
+          <p class="banner-cta__texto">Frutos do mar frescos, ambiente acolhedor e o melhor da Paraíba.</p>
+        </div>
+        <div class="banner-cta__acoes">
+          <a class="botao botao--destaque botao--grande" href="p3.html">Reservar mesa</a>
+          <a class="botao botao--secundario botao--grande" href="p1.html">Ver cardápio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__coluna">
+          <div class="footer__marca">
+            <span class="footer__marca-nome">Estaleiro</span>
+          </div>
+          <p class="footer__descricao">Referência em frutos do mar na Paraíba, há mais de 12 anos à beira-mar.</p>
+          <span class="footer__horario-titulo">Horários</span>
+          <span class="footer__horario-fechado">Confirme pelo WhatsApp</span>
+        </div>
+
+        <div class="footer__coluna">
+          <h3 class="footer__titulo">Navegação</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="landing_page.html">Início</a></li>
+            <li><a class="footer__link" href="p1.html">Cardápio</a></li>
+            <li><a class="footer__link" href="p2.html">Sobre nós</a></li>
+            <li><a class="footer__link" href="p4.html">Galeria</a></li>
+            <li><a class="footer__link" href="p3.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__coluna">
+          <h3 class="footer__titulo">Contato</h3>
+          <ul class="footer__contatos">
+            <li class="footer__contato-item">R. dos Camarões, 95 - Ponta do Seixas</li>
+            <li class="footer__contato-item">R. Severino Linhares Pordeus, 59 - Bessa</li>
+            <li class="footer__contato-item">(83) 3251-1142</li>
+            <li class="footer__contato-item">(83) 2177-7459</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__inferior">
+        <p>2025 © Estaleiro Restaurante. Todos os direitos reservados.</p>
+        <div class="footer__termos">
+          <a class="footer__termos-link" href="#titulo-hero">Voltar ao topo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

@@ -1,0 +1,319 @@
+.cardapio,
+.categorias,
+.carta__grupo {
+  scroll-margin-top: 6rem;
+}
+
+.cardapio-capa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 420px;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background:
+    linear-gradient(#00152EB3, #00152EE6),
+    url("imagens/fornada-da-noite.jpg") center / cover no-repeat;
+  border-bottom: 1px solid var(--cor-borda-suave);
+}
+
+.cardapio-capa__conteudo {
+  max-width: 700px;
+}
+
+.cardapio-capa__selo {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--cor-destaque);
+  margin-bottom: 0.75rem;
+}
+
+.cardapio-capa__titulo {
+  font-size: 3.25rem;
+  margin-bottom: 1rem;
+}
+
+.cardapio-capa__descricao {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cardapio-capa__acoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.categorias {
+  padding: 4.5rem 1.5rem;
+  border-bottom: 1px solid var(--cor-borda-suave);
+}
+
+.categorias__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.categorias__grade {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 220px;
+  grid-template-areas:
+    "classicas classicas entradas     especiais"
+    "classicas classicas vegetarianas vegetarianas"
+    "combos    combos    bebidas      bebidas";
+  gap: 1.25rem;
+}
+
+.categorias__item--entradas     { grid-area: entradas; }
+.categorias__item--classicas    { grid-area: classicas; }
+.categorias__item--especiais    { grid-area: especiais; }
+.categorias__item--vegetarianas { grid-area: vegetarianas; }
+.categorias__item--combos       { grid-area: combos; }
+.categorias__item--bebidas      { grid-area: bebidas; }
+
+.categoria {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-card);
+}
+
+.categoria__imagem {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.categoria__legenda {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.25rem 1rem;
+  background: linear-gradient(transparent, #00152EF2 75%);
+}
+
+.categoria__nome {
+  font-family: var(--fonte-titulos);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cor-destaque);
+}
+
+.categoria__resumo {
+  font-size: 0.9rem;
+  color: var(--cor-texto);
+}
+
+.categoria:hover {
+  border-color: var(--cor-destaque);
+  box-shadow: var(--sombra-destaque);
+}
+
+.categoria:hover .categoria__imagem,
+.categoria:focus-visible .categoria__imagem {
+  transform: scale(1.07);
+}
+
+.cardapio {
+  padding: 4.5rem 1.5rem;
+  border-bottom: 1px solid var(--cor-borda-suave);
+}
+
+.cardapio__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cardapio__grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 2rem;
+}
+
+.carta {
+  padding: 4.5rem 1.5rem;
+}
+
+.carta__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.carta__grade {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.carta__grupo {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda-suave);
+  border-top: 4px solid var(--cor-destaque);
+  border-radius: var(--raio-borda);
+  padding: 1.5rem;
+}
+
+.carta__titulo {
+  font-size: 1.5rem;
+  color: var(--cor-destaque);
+  margin-bottom: 0.75rem;
+}
+
+.carta__lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.carta__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0.5rem;
+  border-bottom: 1px dashed var(--cor-borda-suave);
+  transition: var(--transicao-suave);
+}
+
+.carta__item:last-child {
+  border-bottom: none;
+}
+
+.carta__item:hover {
+  background-color: #E3B1031A;
+}
+
+.carta__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.carta__detalhe {
+  font-size: 0.88rem;
+  color: var(--cor-texto-suave);
+}
+
+.carta__preco {
+  font-family: var(--fonte-titulos);
+  font-weight: 700;
+  color: var(--cor-destaque);
+  white-space: nowrap;
+}
+
+.carta__aviso {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+@media screen and (min-width: 1200px) {
+  .categorias__grade {
+    grid-auto-rows: 240px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carta__grade {
+    grid-template-columns: 1fr;
+  }
+
+  .carta__grupo {
+    scroll-margin-top: 9rem;
+  }
+
+  .cardapio,
+  .categorias {
+    scroll-margin-top: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .banner-cta__conteudo {
+    flex-basis: auto;
+  }
+
+  .cardapio,
+  .categorias,
+  .carta__grupo {
+    scroll-margin-top: 5rem;
+  }
+
+  .categorias__grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 190px;
+    grid-template-areas:
+      "classicas    classicas"
+      "entradas     especiais"
+      "vegetarianas combos"
+      "bebidas      bebidas";
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo-titulo {
+    font-size: 1.1rem;
+  }
+
+  .header__logo-subtitulo {
+    font-size: 0.6rem;
+  }
+
+  .cardapio-capa {
+    min-height: 360px;
+    padding: 2.5rem 1rem;
+  }
+
+  .cardapio-capa__titulo {
+    font-size: 2.2rem;
+  }
+
+  .cardapio-capa__descricao {
+    font-size: 1rem;
+  }
+
+  .cardapio-capa__acoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .categorias,
+  .cardapio,
+  .carta {
+    padding: 3rem 1rem;
+  }
+
+  .categorias__grade {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 170px;
+    grid-template-areas:
+      "entradas"
+      "classicas"
+      "especiais"
+      "vegetarianas"
+      "combos"
+      "bebidas";
+  }
+
+  .carta__grupo {
+    padding: 1.25rem 0.75rem;
+  }
+}
