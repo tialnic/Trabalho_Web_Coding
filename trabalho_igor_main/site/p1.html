@@ -1,12 +1,498 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Cardápio da Estaleiro Pizzaria: entradas, pizzas clássicas, especiais, vegetarianas, combos e bebidas.">
+    <title>Pizzaria Forno a Lenha | Cardápio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="LP.css">
     <link rel="stylesheet" href="p1.css">
 </head>
-<body>
-    <H1>Pagina 1</H1>
+<body class="pagina">
+
+    <header class="header">
+
+        <div class="header__principal">
+            <div class="header__principal-container">
+                
+                <a href="landing_page.html" class="header__logo">
+                    <div class="header__logo-textos">
+                        <span class="header__logo-titulo">ESTALEIRO PIZZARIA</span>
+                        <span class="header__logo-subtitulo">FORNO A LENHA &bull; DESDE 2014</span>
+                    </div>
+                </a>
+
+                <input type="checkbox" id="nav-toggle" class="nav__checkbox" aria-hidden="true">
+                <label for="nav-toggle" class="nav__hamburger" aria-label="Abrir menu">
+                    <span class="nav__hamburger-linha"></span>
+                    <span class="nav__hamburger-linha"></span>
+                    <span class="nav__hamburger-linha"></span>
+                </label>
+
+                <nav class="nav" aria-label="Navegação principal">
+                    <ul class="nav__lista">
+                        <li class="nav__item">
+                            <a href="landing_page.html" class="nav__link">Início</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="p1.html" class="nav__link nav__link--ativo" aria-current="page">Cardápio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="p2.html" class="nav__link">Sobre Nós</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="p4.html" class="nav__link">Galeria</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="p3.html" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <section class="cardapio-capa" aria-labelledby="cardapio-capa-titulo">
+            <div class="cardapio-capa__conteudo">
+                <span class="cardapio-capa__selo">Do forno para a mesa</span>
+                <h1 id="cardapio-capa-titulo" class="cardapio-capa__titulo">Nosso Cardápio</h1>
+                <p class="cardapio-capa__descricao">Escolha uma categoria e conheça as pizzas, entradas e bebidas da casa.</p>
+                <div class="cardapio-capa__acoes">
+                    <a href="#categorias" class="botao botao--destaque">Ver Categorias</a>
+                    <a href="p3.html" class="botao botao--secundario">Fazer Reserva</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias" class="categorias" aria-labelledby="categorias-titulo">
+            <div class="categorias__container">
+                <h2 id="categorias-titulo" class="secao-titulo secao-titulo--centralizado">Categorias</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">Toque em uma foto para ir direto à seção</p>
+                <nav aria-label="Categorias do cardápio">
+                    <ul class="categorias__grade">
+                        <li class="categorias__item categorias__item--entradas">
+                            <a href="#entradas" class="categoria">
+                                <img class="categoria__imagem" src="imagens/massa-na-bancada.jpg" alt="">
+                                <span class="categoria__legenda">
+                                    <span class="categoria__nome">Entradas</span>
+                                    <span class="categoria__resumo">Para abrir o apetite</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="categorias__item categorias__item--classicas">
+                            <a href="#classicas" class="categoria">
+                                <img class="categoria__imagem" src="imagens/molho-em-espiral.jpg" alt="">
+                                <span class="categoria__legenda">
+                                    <span class="categoria__nome">Clássicas</span>
+                                    <span class="categoria__resumo">Receitas tradicionais</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="categorias__item categorias__item--especiais">
+                            <a href="#especiais" class="categoria">
+                                <img class="categoria__imagem" src="imagens/direto-do-forno.jpg" alt="">
+                                <span class="categoria__legenda">
+                                    <span class="categoria__nome">Especiais</span>
+                                    <span class="categoria__resumo">Assinaturas da casa</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="categorias__item categorias__item--vegetarianas">
+                            <a href="#vegetarianas" class="categoria">
+                                <img class="categoria__imagem" src="imagens/tomate-e-salsa.jpg" alt="">
+                                <span class="categoria__legenda">
+                                    <span class="categoria__nome">Vegetarianas</span>
+                                    <span class="categoria__resumo">Sabores sem carne</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="categorias__item categorias__item--combos">
+                            <a href="#combos" class="categoria">
+                                <img class="categoria__imagem" src="imagens/mesas-prontas.jpg" alt="">
+                                <span class="categoria__legenda">
+                                    <span class="categoria__nome">Combos</span>
+                                    <span class="categoria__resumo">Para dividir à mesa</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="categorias__item categorias__item--bebidas">
+                            <a href="#bebidas" class="categoria">
+                                <img class="categoria__imagem" src="imagens/area-do-bar.jpg" alt="">
+                                <span class="categoria__legenda">
+                                    <span class="categoria__nome">Bebidas</span>
+                                    <span class="categoria__resumo">Para acompanhar</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="classicas" class="cardapio" aria-labelledby="classicas-titulo">
+            <div class="cardapio__container">
+                <h2 id="classicas-titulo" class="secao-titulo secao-titulo--centralizado">Pizzas Clássicas</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">As receitas que não podem faltar, com massa de fermentação lenta</p>
+                <div class="cardapio__grade">
+
+                    <article class="card card--destaque">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/napolitana-da-casa.jpg" alt="Pizza margherita com muçarela e folhas de manjericão" loading="lazy">
+                            <span class="card__badge">Favorita</span>
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Margherita</h3>
+                            <p class="card__descricao">Molho de tomate San Marzano, muçarela, manjericão fresco e azeite extravirgem.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 52,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Margherita">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/pepperoni-com-presunto.jpg" alt="Pizza coberta com pepperoni e presunto" loading="lazy">
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Pepperoni com Presunto</h3>
+                            <p class="card__descricao">Muçarela coberta com fatias de pepperoni e presunto assadas até dourar.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 58,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Pepperoni com Presunto">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/galeria-pizza-pepperoni.jpg" alt="Pizza de queijos gratinados fatiada, ao lado de alecrim e tomates-cereja" loading="lazy">
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Quatro Queijos</h3>
+                            <p class="card__descricao">Muçarela, provolone, gorgonzola e parmesão gratinados, com um toque de alecrim.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 61,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Quatro Queijos">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="especiais" class="cardapio" aria-labelledby="especiais-titulo">
+            <div class="cardapio__container">
+                <h2 id="especiais-titulo" class="secao-titulo secao-titulo--centralizado">Especiais da Casa</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">Criações do nosso pizzaiolo, direto do forno a lenha</p>
+                <div class="cardapio__grade">
+
+                    <article class="card card--destaque">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/linguica-com-cogumelos.jpg" alt="Pizza de linguiça com cogumelos, pimentões e azeitonas" loading="lazy">
+                            <span class="card__badge">Da Casa</span>
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Linguiça com Cogumelos</h3>
+                            <p class="card__descricao">Linguiça fatiada, cogumelos, pimentões, azeitonas pretas e muçarela.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 64,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Linguiça com Cogumelos">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/fatia-na-mao.jpg" alt="Fatia grande de pizza de pepperoni com burrata e manjericão" loading="lazy">
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Pepperoni com Burrata</h3>
+                            <p class="card__descricao">Molho artesanal, pepperoni crocante, burrata cremosa e manjericão.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 69,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Pepperoni com Burrata">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/queijo-borbulhando.jpg" alt="Calzone dourando em frente às chamas do forno a lenha" loading="lazy">
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Calzone do Forno</h3>
+                            <p class="card__descricao">Massa recheada com muçarela, molho de tomate e manjericão, tostada junto à brasa.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 57,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Calzone do Forno">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="vegetarianas" class="cardapio" aria-labelledby="vegetarianas-titulo">
+            <div class="cardapio__container">
+                <h2 id="vegetarianas-titulo" class="secao-titulo secao-titulo--centralizado">Pizzas Vegetarianas</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">Leveza e frescor com ingredientes selecionados</p>
+                <div class="cardapio__grade">
+
+                    <article class="card">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/para-dividir.jpg" alt="Pizza caprese com tomate e manjericão sobre tábua de madeira" loading="lazy">
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Caprese</h3>
+                            <p class="card__descricao">Muçarela, rodelas de tomate fresco, manjericão e azeite.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 55,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Caprese">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card card--destaque">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/ingredientes-pizza.jpg" alt="Pizza retangular rústica com tomates e manjericão" loading="lazy">
+                            <span class="card__badge">Leve</span>
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Rústica de Tomatinhos</h3>
+                            <p class="card__descricao">Massa fina e alongada com tomates-cereja, muçarela fresca e manjericão.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 56,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Rústica de Tomatinhos">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__imagem-wrapper">
+                            <img class="card__imagem" src="imagens/queijo-no-ponto.jpg" alt="Fatia de pizza sendo erguida com o queijo derretido esticando" loading="lazy">
+                        </div>
+                        <div class="card__conteudo">
+                            <h3 class="card__titulo">Filante de Manjericão</h3>
+                            <p class="card__descricao">Muçarela em dobro, pedaços de tomate e manjericão assado.</p>
+                            <div class="card__rodape">
+                                <span class="card__preco">R$ 54,90</span>
+                                <a class="card__botao" href="p3.html" aria-label="Pedir pizza Filante de Manjericão">Pedir</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="carta" aria-labelledby="carta-titulo">
+            <div class="carta__container">
+                <h2 id="carta-titulo" class="secao-titulo secao-titulo--centralizado">Para Completar</h2>
+                <p class="secao-subtitulo secao-subtitulo--centralizado">Entradas, combos e bebidas</p>
+                <div class="carta__grade">
+
+                    <section id="entradas" class="carta__grupo" aria-labelledby="entradas-titulo">
+                        <h3 id="entradas-titulo" class="carta__titulo">Entradas</h3>
+                        <ul class="carta__lista">
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Focaccia de Alecrim</strong>
+                                    <span class="carta__detalhe">Pão italiano com azeite e sal grosso</span>
+                                </div>
+                                <span class="carta__preco">R$ 24,90</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Pão de Alho no Forno</strong>
+                                    <span class="carta__detalhe">Massa da casa com manteiga de alho</span>
+                                </div>
+                                <span class="carta__preco">R$ 19,90</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Bruschetta Clássica</strong>
+                                    <span class="carta__detalhe">Tomate, manjericão e azeite</span>
+                                </div>
+                                <span class="carta__preco">R$ 27,90</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Burrata da Casa</strong>
+                                    <span class="carta__detalhe">Com tomatinhos assados e torradas</span>
+                                </div>
+                                <span class="carta__preco">R$ 42,90</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="combos" class="carta__grupo" aria-labelledby="combos-titulo">
+                        <h3 id="combos-titulo" class="carta__titulo">Combos</h3>
+                        <ul class="carta__lista">
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Casal</strong>
+                                    <span class="carta__detalhe">1 pizza média, 1 entrada e 2 bebidas</span>
+                                </div>
+                                <span class="carta__preco">R$ 94,90</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Família</strong>
+                                    <span class="carta__detalhe">2 pizzas grandes e 1 refrigerante de 2 L</span>
+                                </div>
+                                <span class="carta__preco">R$ 129,90</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Mesa Cheia</strong>
+                                    <span class="carta__detalhe">3 pizzas grandes e 2 entradas</span>
+                                </div>
+                                <span class="carta__preco">R$ 199,90</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Infantil</strong>
+                                    <span class="carta__detalhe">Minipizza de muçarela e suco</span>
+                                </div>
+                                <span class="carta__preco">R$ 32,90</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="bebidas" class="carta__grupo" aria-labelledby="bebidas-titulo">
+                        <h3 id="bebidas-titulo" class="carta__titulo">Bebidas</h3>
+                        <ul class="carta__lista">
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Água Mineral</strong>
+                                    <span class="carta__detalhe">Com ou sem gás, 500 ml</span>
+                                </div>
+                                <span class="carta__preco">R$ 5,00</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Refrigerante</strong>
+                                    <span class="carta__detalhe">Lata de 350 ml</span>
+                                </div>
+                                <span class="carta__preco">R$ 7,00</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Suco Natural</strong>
+                                    <span class="carta__detalhe">Laranja, abacaxi ou maracujá</span>
+                                </div>
+                                <span class="carta__preco">R$ 11,00</span>
+                            </li>
+                            <li class="carta__item">
+                                <div class="carta__info">
+                                    <strong class="carta__nome">Soda Italiana</strong>
+                                    <span class="carta__detalhe">Limão, maçã verde ou frutas vermelhas</span>
+                                </div>
+                                <span class="carta__preco">R$ 14,00</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <p class="carta__aviso">Preços ilustrativos, criados para este projeto acadêmico.</p>
+            </div>
+        </section>
+
+        <section class="banner-cta" aria-labelledby="reserva-titulo">
+            <div class="banner-cta__container">
+                <div class="banner-cta__conteudo">
+                    <span class="banner-cta__selo">Venha nos visitar</span>
+                    <h2 id="reserva-titulo" class="banner-cta__titulo">Já escolheu o seu sabor?</h2>
+                    <p class="banner-cta__texto">Reserve sua mesa ou fale com a nossa equipe para fazer um pedido.</p>
+                </div>
+                <div class="banner-cta__acoes">
+                    <a href="p5.html" class="botao botao--destaque">Reservar Mesa</a>
+                    <a href="p3.html" class="botao botao--secundario">Falar Conosco</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            
+            <div class="footer__grid">
+                
+                <div class="footer__coluna">
+                    <div class="footer__marca">
+                        <span class="footer__marca-nome">ESTALEIRO PIZZARIA</span>
+                    </div>
+                    <p class="footer__descricao">
+                        A tradicional pizza napolitana feita no forno a lenha com ingredientes autênticos e fermentação natural.
+                    </p>
+                </div>
+
+                <div class="footer__coluna">
+                    <h3 class="footer__titulo">Navegação</h3>
+                    <ul class="footer__links">
+                        <li class="footer__item">
+                            <a href="landing_page.html" class="footer__link">Início</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="p1.html" class="footer__link">Cardápio Completo</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="p2.html" class="footer__link">Nossa História & Forno</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="p4.html" class="footer__link">Galeria de Fotos</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="p5.html" class="footer__link">Reservas de Mesas</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="p3.html" class="footer__link">Contato & Localização</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__coluna">
+                    <h3 class="footer__titulo">Atendimento</h3>
+                    <ul class="footer__contatos">
+                        <li class="footer__contato-item">
+                            <span>Av. Boa Viagem, 1500 - Recife, PE</span>
+                        </li>
+                        <li class="footer__contato-item">
+                            <span>(81) 3456-7890</span>
+                        </li>
+                        <li class="footer__contato-item">
+                            <span>WhatsApp: (81) 98765-4321</span>
+                        </li>
+                        <li class="footer__contato-item">
+                            <span>contato@estaleiropizzaria.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__inferior">
+                <p class="footer__copyright">
+                    &copy; 2026 Estaleiro Pizzaria &bull; Todos os direitos reservados. Projeto Acadêmico de Web Coding.
+                </p>
+                <div class="footer__termos">
+                    <a href="p3.html" class="footer__termos-link">Política de Privacidade</a>
+                    <span class="footer__divisor">&bull;</span>
+                    <a href="p3.html" class="footer__termos-link">Termos de Uso</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 </body>
 </html>
