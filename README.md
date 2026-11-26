@@ -31,20 +31,6 @@ git clone https://github.com/tialnic/Trabalho_Web_Coding.git
 
 Arquivo inicial: `trabalho_igor_main/site/landing_page.html`. As fontes vêm do Google Fonts e precisam de internet.
 
-## Organização dos arquivos
-
-```
-README.md
-capturas/                 capturas de tela deste README
-imagens/
-trabalho_igor_main/
-  site/
-    landing_page.html
-    p1.html  p2.html  p3.html  p4.html
-    LP.css  p1.css  p2.css  p4.css  p5.css
-    imagens/              fotos usadas pelas páginas
-```
-
 ## Identidade visual
 
 | Uso | Cor |
@@ -156,7 +142,3 @@ As classes seguem o padrão `bloco__elemento--modificador`.
 | 375 px | 768 px | 1366 px |
 |---|---|---|
 | <img src="capturas/galeria-375.png" alt="Galeria em 375 px" width="150"> | <img src="capturas/galeria-768.png" alt="Galeria em 768 px" width="230"> | <img src="capturas/galeria-1366.png" alt="Galeria em 1366 px" width="420"> |
-
-## Créditos
-
-Fotos ilustrativas, do acervo do projeto, do [Unsplash](https://unsplash.com/license) e do Wikimedia Commons.
